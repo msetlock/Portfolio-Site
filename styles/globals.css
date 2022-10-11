@@ -1,3 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'noto';
+  src: url('../public/Noto.otf');
+}
+
+@layer base{
+  body{
+    @apply bg-[#F2E2D2] text-gray-700 tracking-wide font-noto
+  }
+  h1, h2, h3, h4, h5, h6{
+    @apply font-bold
+  }
+  h1{
+    @apply text-4xl sm:text-5xl md:text-6xl
+  }
+  h2{
+    @apply text-3xl sm:text-4xl
+  }
+  li{
+    @apply cursor-pointer
+  }
+
+  button{
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#84c0c6] to-[#9fb7b9]
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -15,12 +46,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
+
+
+
+
