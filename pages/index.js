@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Nav from '../components/Nav';
+import Navbar from '../components/Nav';
 import Image from "next/image";
 import deved from '../public/YT.png'
 
@@ -14,8 +14,8 @@ export default function Home() {
       </Head>
 
       <main >
-        <Nav/>
-       <h1 className='text-5xl text-center p-10 font-noto'>Lorem ipsum dolor,  neque explicabo, in libero. Assumenda, dolorum sit?</h1>
+        <Navbar/>
+       <h1 className='text-center p-10 font-noto'>Lorem ipsum dolor,  neque explicabo, in libero. Assumenda, dolorum sit?</h1>
       </main>
 
 

@@ -7,8 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
       colors:{
       },
+      
 fontFamily: {
   noto: "noto",
   }

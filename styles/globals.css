@@ -7,9 +7,12 @@
   src: url('../public/Noto.otf');
 }
 
+@layer componenets{
+
+}
 @layer base{
   body{
-    @apply bg-[#F2E2D2] text-gray-700 tracking-wide font-noto
+    @apply bg-[#F2E2D2] text-gray-700 tracking-wide font-noto font-semibold
   }
   h1, h2, h3, h4, h5, h6{
     @apply font-bold
