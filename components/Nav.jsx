@@ -8,16 +8,17 @@ import {BsFillPersonLinesFill} from "react-icons/bs"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
+  console.log(nav)
 
   const handleNav = () => {
     setNav(!nav)
   }
   return (
-    <div className="w-full h-20 shadow-xl z-[100] bg-gradient-to-b from-[#9fb7b9] to-[#f2e2d2] border-none ">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+    <div className="w-full h-20 z-[100] bg-gradient-to-b from-[#9fb7b9] to-[#f2e2d2] border-none ">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:pr-14 2xl:pl-5">
         <Image src={"/../public/code.png"} width={70} height={70} />
         <div>
-          <ul className="hidden md:flex mr-8">
+          <ul className="hidden md:flex mr-4">
             <Link href={"/"}>
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
@@ -44,10 +45,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={!nav ? 'md:hidden  fixed left-0 top-0 w-full h-screen bg-[#84c0c6]/70 ease-in duration-500' : ''}>
+      <div onclick={handleNav} className={ !nav ? 'md:hidden  fixed left-0 top-0 w-full h-screen bg-[#84c0c6]/70 ease-in duration-300' : ''}>
 
-        <div className={!nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:-[45%] h-screen p-4 bg-[#e1e6df] ease-in duration-500' : 
-      "fixed left-[-100%] top-0 p-4 bg-[#e1e6df] ease-in duration-500"}>
+        <div className={!nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:-[45%] h-screen p-4 bg-[#e1e6df] ease-in duration-700' : 
+      "fixed left-[-100%] top-0 p-4 bg-[#e1e6df] ease-in duration-700"}>
           <div className="">
             <div className="flex w-full items-center justify-between ">
               <Image src={"/../public/code.png"} 
@@ -90,7 +91,7 @@ const Navbar = () => {
               </Link>
               
             </ul>
-            <div className="pt-40 mb-10">
+            <div className="pt-10 pb-20">
               <p className="uppercase tracking-widest text-[#46b1c9]">
                 Connect with me
               </p>

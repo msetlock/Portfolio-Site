@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../components/Nav';
+import Main from '../components/main';
 import Image from "next/image";
 import deved from '../public/YT.png'
 
@@ -13,10 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main >
+    
         <Navbar/>
-       <h1 className='text-center p-10 font-noto'>Lorem ipsum dolor,  neque explicabo, in libero. Assumenda, dolorum sit?</h1>
-      </main>
+        <Main/>
+     
 
 
     </div>
