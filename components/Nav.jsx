@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-20 z-[100] bg-gradient-to-b from-[#9fb7b9] to-[#f2e2d2] border-none ">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:pr-14 2xl:pl-5">
-        <Image src={"/../public/code.png"} width={70} height={70} />
+        <Image className="cursor-pointer hover:animate-spin" src={"/../public/code.png"} width={70} height={70} />
         <div>
           <ul className="hidden md:flex mr-4">
             <Link href={"/"}>

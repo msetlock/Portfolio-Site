@@ -1,8 +1,13 @@
 import Head from 'next/head'
 import Navbar from '../components/Nav';
-import Main from '../components/main';
+import Main from '../components/main'
+import About from '../components/About';
+import Skill from '../components/Skill';
 import Image from "next/image";
-import deved from '../public/YT.png'
+import yotr from "next/image"
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+
 
 export default function Home() {
   return (
@@ -17,6 +22,10 @@ export default function Home() {
     
         <Navbar/>
         <Main/>
+        <About/>
+        <Skill/> 
+        <Projects/>
+        <Contact/>
      
 
 
