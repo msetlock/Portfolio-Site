@@ -11,7 +11,7 @@ import python from '../public/skills/python.png'
 
 const Skill = () => {
   return (
-    <div className="w-full lg:h-screen p-2">
+    <div id="skills" className="w-full lg:h-screen p-2">
       <div className="px-4 w-full max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl uppercase text-[#46b1c9] tracking-widest">Skills</p>
         <h2 className="py-4">What can i do</h2>

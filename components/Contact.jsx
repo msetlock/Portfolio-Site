@@ -7,8 +7,8 @@ import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 
 const Contact = () => {
   return (
-    <div className="w-full lg:h-screen p-2">
-      <div className="max-w-[1240px] m-auto px-4 py-16 w-full">
+    <div className="w-full lg:h-screen p-2 py-16">
+      <div id="contact" className="max-w-[1240px] m-auto px-4 py-16 w-full">
         <p className="text-xl uppercase text-[#46b1c9] tracking-widest">
           Contact
         </p>
@@ -55,13 +55,14 @@ const Contact = () => {
 
           <div className="col-span-3 w-full m-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form action="">
+              <form action="https://getform.io/f/438a39d5-d9d0-4cb5-b0f7-aaf15f42d87d" method="POST" encType="">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm">Name</label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-400"
                       type="text"
+                      name="name"
                     />
                   </div>
                   <div className="flex flex-col">
@@ -69,6 +70,7 @@ const Contact = () => {
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-400"
                       type="text"
+                      name="phone number"
                     />
                   </div>
                   <div></div>
@@ -78,6 +80,7 @@ const Contact = () => {
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-400"
                     type="email"
+                    name="email"
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -85,11 +88,12 @@ const Contact = () => {
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-400"
                     type="text"
+                    name="subject"
                   />
                 </div>
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm">Message</label>
-                  <textarea className="border-2 rounded-lg p-3 flex border-gray-400" rows={'10'}></textarea>
+                  <textarea className="border-2 rounded-lg p-3 flex border-gray-400" rows={'10'} name="message"></textarea>
                 </div>
                 <div>
                     <button className="my-5 w-full bg-gradient-to-r from-[#46b1c9] to-[#9fb7b9] p-4 text-gray-800">
@@ -101,7 +105,7 @@ const Contact = () => {
           </div>
         </div>
         <div className=" flex justify-center py-12">
-            <Link href={'/'}>
+            <Link href={'/#main'}>
                 <div className="rounded-full shadow-xl shadow-gray-400 p-4 m-auto cursor-pointer hover:scale-125 ease-in duration-300">
                     <HiOutlineChevronDoubleUp size={30} className="text-[#46b1c9]"/></div>
             </Link>

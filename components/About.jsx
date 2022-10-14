@@ -5,7 +5,7 @@ import splash from "../public/aboutsplash.jpg"
 
 const About = () => {
   return (
-    <div className="w-full md:h-screen p-2 flex items-center justify-center py-16">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center justify-center py-16">
       <div className="grid-cols- max-w-[1240px] m-auto md:grid grid-col grid-cols-3 gap-10 xl:gap-24">
         <div className="w-full h-auto m-auto shadow-md xl:shadow-xl shadow-gray-500 rounded-xl flec items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image className="rounded-xl " src={splash}/>

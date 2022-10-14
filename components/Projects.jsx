@@ -7,7 +7,7 @@ import Projectcard from "./Projectcard";
 
 const projects = () => {
   return (
-    <div className="w-full">
+    <div id="projects" className="w-full ">
       <div className="px-4 max-w-[1240px] mx-auto py-16">
         <p className="text-xl uppercase text-[#46b1c9] tracking-widest">
           Projects
